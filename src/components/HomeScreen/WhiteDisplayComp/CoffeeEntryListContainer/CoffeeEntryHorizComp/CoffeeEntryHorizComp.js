@@ -13,8 +13,8 @@ const CoffeeEntryHorizComp = (props) => {
 
         const mapObject = tt.map({
             key: process.env.REACT_APP_TOM_TOM_API_KEY,
-            container: 'map-container',
-            center: [-87.116315, 32.835597],
+            container: `map-box-${props.indexCount}`,
+            center: props.latLong,
             dragPan: false,
             interactive: false,
             zoom: 3
@@ -23,7 +23,7 @@ const CoffeeEntryHorizComp = (props) => {
 
         mapObject.on('load', () => {
 
-            mapObject.setZoom(9);
+            mapObject.setZoom(13);
         })
 
 
@@ -32,11 +32,11 @@ const CoffeeEntryHorizComp = (props) => {
 
     return (<div className={styles.coffeeEntryHorizCompContainer}>
         <div className={styles.infoDivisionContainer}>
-            <span>wefwef</span>
+            <span>{`${props.indexCount}- Hello`}</span>
             <span>Some  more address information</span>
         </div>
         <div className={styles.mapViewContainer}>
-            <div id="map-container">
+            <div id={`map-box-${props.indexCount}`} className="map-container">
 
             </div>
         </div>
