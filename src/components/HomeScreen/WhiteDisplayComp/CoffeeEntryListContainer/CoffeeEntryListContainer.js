@@ -31,7 +31,7 @@ const CoffeeEntryListContainer = (props) => {
         {dummyCoffeeData.map((coffeeDataEntry, index) => (
             <CoffeeEntryHorizComp
                 key={index}
-                indexCount={index}
+                indexCount={index + 1}
                 name={coffeeDataEntry.name}
                 address={coffeeDataEntry.address}
                 latLong={coffeeDataEntry.latLong}

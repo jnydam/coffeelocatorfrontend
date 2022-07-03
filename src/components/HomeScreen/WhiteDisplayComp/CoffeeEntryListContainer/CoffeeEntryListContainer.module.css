@@ -1,8 +1,11 @@
 .coffeeEntryListContainerComp {
     display: flex;
     width: 100%;
-    background-color: lightgreen;
     height: 100%;
     overflow: scroll;
     flex-direction: column;
+}
+
+.coffeeEntryListContainerComp::-webkit-scrollbar {
+    display: none;
 }

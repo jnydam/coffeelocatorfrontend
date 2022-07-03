@@ -4,7 +4,7 @@ import './CoffeeEntryHorizComp.css';
 
 import styles from './CoffeeEntryHorizComp.module.css';
 
-import tt from '@tomtom-international/web-sdk-maps';
+import tt, { map } from '@tomtom-international/web-sdk-maps';
 
 const CoffeeEntryHorizComp = (props) => {
 
@@ -24,7 +24,13 @@ const CoffeeEntryHorizComp = (props) => {
         mapObject.on('load', () => {
 
             mapObject.setZoom(13);
-        })
+
+            const marker = new tt.Marker()
+                .setLngLat(props.latLong)
+                .addTo(mapObject);
+        });
+
+
 
 
 
@@ -32,8 +38,8 @@ const CoffeeEntryHorizComp = (props) => {
 
     return (<div className={styles.coffeeEntryHorizCompContainer}>
         <div className={styles.infoDivisionContainer}>
-            <span>{`${props.indexCount}- Hello`}</span>
-            <span>Some  more address information</span>
+            <span className={styles.textStyleBold}>{`${props.indexCount} - ${props.name}`}</span>
+            <span className={styles.textStyle} style={{marginTop: '0.5rem'}}>{props.address}</span>
         </div>
         <div className={styles.mapViewContainer}>
             <div id={`map-box-${props.indexCount}`} className="map-container">
