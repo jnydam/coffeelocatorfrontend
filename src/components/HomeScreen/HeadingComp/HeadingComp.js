@@ -1,9 +1,11 @@
 import React from 'react';
 
+import styles from './HeadingComp.module.css';
+
 const HeadingComp = (props) => {
 
     return (<div className={styles.headingCompContainer}>
-        <span>This is the heading comp</span>
+        <span>Coffee Locator</span>
     </div>)
 }
 

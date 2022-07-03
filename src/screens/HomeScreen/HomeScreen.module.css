@@ -1,6 +1,7 @@
 .homeScreenContainer {
     display: flex;
     height: 100%;
-    width: 100%;
+    width: 40rem;
     background-color: lightblue;
+    flex-direction: column;
 }
