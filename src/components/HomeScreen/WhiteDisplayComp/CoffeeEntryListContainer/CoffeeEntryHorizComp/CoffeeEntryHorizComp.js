@@ -6,6 +6,8 @@ import styles from './CoffeeEntryHorizComp.module.css';
 
 import tt, { map } from '@tomtom-international/web-sdk-maps';
 
+// Individual Component
+
 const CoffeeEntryHorizComp = (props) => {
 
 
