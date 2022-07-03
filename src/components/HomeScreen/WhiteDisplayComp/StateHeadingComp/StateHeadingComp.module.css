@@ -1,0 +1,6 @@
+.stateHeadingCompContainer {
+    display: flex;
+    background-color: yellow;
+    min-height: 5rem;
+    width: 100%;
+}

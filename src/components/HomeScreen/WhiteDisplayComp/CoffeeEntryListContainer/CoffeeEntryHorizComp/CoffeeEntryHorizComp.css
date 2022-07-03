@@ -1,0 +1,7 @@
+#map-container {
+    display: flex;
+    background-color: brown;
+    height: 95%;
+    border-radius: 0.3rem;
+    width: 95%;
+}

@@ -1,6 +1,23 @@
 .coffeeEntryHorizCompContainer {
     display: flex;
     width: 100%;
-    min-height: 10rem;
+    min-height: 14rem;
+    height: 14rem;
     background-color: lightgrey;
+}
+
+.infoDivisionContainer {
+    display: flex;
+    flex: 2;
+    height: 100%;
+    background-color: violet;
+}
+
+.mapViewContainer {
+    display: flex;
+    flex: 2;
+    height: 100%;
+    background-color: aqua;
+    align-items: center;
+    justify-content: center;
 }

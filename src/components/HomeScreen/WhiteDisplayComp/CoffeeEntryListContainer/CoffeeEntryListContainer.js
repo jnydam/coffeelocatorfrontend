@@ -1,10 +1,14 @@
 import React from 'react';
 
+import styles from './CoffeeEntryListContainer.module.css';
+
+import CoffeeEntryHorizComp from './CoffeeEntryHorizComp/CoffeeEntryHorizComp';
+
 const CoffeeEntryListContainer = (props) => {
 
 
     return (<div className={styles.coffeeEntryListContainerComp}>
-        <span>This is the coffee entry list container</span>
+        <CoffeeEntryHorizComp></CoffeeEntryHorizComp>
     </div>)
 }
 
